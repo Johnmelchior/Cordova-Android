@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://saneforums.org/ -->
+<html prefix="og: http://ogp.me/ns#" dir="ltr" lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Saneforums</title>
+
+
+  <!-- Ionic js and css 
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+  <!-- Ionic js and css ends here -->
+  
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><link href="http://saneforums.org/t5/custom/page/page-id/Mobile-Landing-page" rel="canonical">
+
+    <!-- <link href="sanes/sanev2-418296589.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- Mobile Device -->
+    <link href="http://saneforums.org/t5/custom/page/page-id/Mobile-Landing-Page" rel="canonical">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <link href="sanes/sanev21064330099.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="sanes/uikit.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="http://gnapi98748.i.lithium.com/html/assets/uikit.min.css?4A79D6EB6B8053C29BA327080F6E6666" type="text/css">
+    <!-- <link rel="stylesheet" href="sanes/jquery-ui.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="http://gnapi98748.i.lithium.com/html/assets/jquery-ui.min.css">
+    <script type="text/javascript" src="sanes/jquery.min.js" async=""></script>
+    <script type="text/javascript" src="sanes/jquery-ui.min.js" async=""></script>
+    <script type="text/javascript" src="sanes/uikit.min.js" async=""></script>
+    <script type="text/javascript" src="sanes/jquery.expander.min.js" async=""></script>
+    <script type="text/javascript" src="sanes/lia-scripts-head-min.js"></script>
+    <!-- End Mobile Device -->
+
+<script language="javascript" type="text/javascript">
+<!--
+LITHIUM.DEBUG = false;
+LITHIUM.CommunityJsonObject = {
+  "Validation" : {
+    "image.description" : {
+      "min" : 0,
+      "max" : 1000,
+      "isoneof" : [ ],
+      "type" : "string"
+    },
+    "tkb.toc_maximum_heading_level" : {
+      "min" : 1,
+      "max" : 6,
+      "isoneof" : [ ],
+      "type" : "integer"
+    },
+    "tkb.toc_heading_list_style" : {
+      "min" : 0,
+      "max" : 50,
+      "isoneof" : [
+        "disc",
+        "circle",
+        "square",
+        "none"
+      ],
+      "type" : "string"
+    },
+    "tkb.toc_heading_indent" : {
+      "min" : 5,
+      "max" : 50,
+      "isoneof" : [ ],
+      "type" : "integer"
+    }
+  },
+  "WebTracking" : {
+    "Activities" : { },
+    "path" : "Community:SANE Forums"
+  },
+  "User" : {
+    "settings" : {
+      "imageupload.legal_file_extensions" : "*.jpg;*.JPG;*.jpeg;*.JPEG;*.gif;*.GIF;*.png;*.PNG",
+      "config.enable_avatar" : true,
+      "integratedprofile.show_klout_score" : true,
+      "layout.sort_view_by_last_post_date" : true,
+      "layout.friendly_dates_enabled" : true,
+      "layout.format_pattern_date" : "dd-MM-yyyy",
+      "isUserLinked" : false,
+      "integratedprofile.cta_add_topics_dismissal_timestamp" : -1,
+      "layout.message_body_image_max_size" : 1000,
+      "config.confirm_new_post" : false,
+      "integratedprofile.cta_connect_wide_dismissal_timestamp" : -1,
+      "contest.entries_per_page_num" : 20,
+      "layout.messages_per_page_linear" : 30,
+      "integratedprofile.cta_manage_topics_dismissal_timestamp" : -1,
+      "profile.shared_profile_test_group" : false,
+      "integratedprofile.cta_personalized_feed_dismissal_timestamp" : -1,
+      "contest.one_kudo_per_contest" : false,
+      "integratedprofile.enable_social_networks" : false,
+      "integratedprofile.my_interests_dismissal_timestamp" : -1,
+      "profile.language" : "en",
+      "layout.friendly_dates_max_age_days" : 1,
+      "layout.threading_order" : "thread_descending",
+      "layout.module_welcome" : "",
+      "imageupload.max_uploaded_images_per_upload" : 100,
+      "imageupload.max_uploaded_images_per_user" : 10000,
+      "integratedprofile.connect_mode" : "",
+      "tkb.toc_maximum_heading_level" : "",
+      "tkb.toc_heading_list_style" : "disc",
+      "sharedprofile.show_hovercard_score" : true,
+      "config.search_before_post_scope" : "community",
+      "tkb.toc_heading_indent" : "",
+      "imageupload.max_file_size" : 3072,
+      "layout.show_batch_checkboxes" : false,
+      "integratedprofile.cta_connect_slim_dismissal_timestamp" : -1,
+      "config.force_search_before_post" : false
+    },
+    "isAnonymous" : true,
+    "policies" : {
+      "image-upload.process-and-remove-exif-metadata" : false
+    },
+    "registered" : false,
+    "emailRef" : "",
+    "id" : -1,
+    "login" : "Anonymous"
+  },
+  "Server" : {
+    "communityPrefix" : "/gnapi98748",
+    "tapestryPrefix" : "/t5",
+    "deviceMode" : "DESKTOP",
+    "responsiveDeviceMode" : "DESKTOP",
+    "showTextKeys" : false
+  },
+  "Config" : {
+    "phase" : "prod",
+    "integratedprofile.cta.reprompt.delay" : 30,
+    "app.revision" : 311648
+  },
+  "Activity" : {
+    "Results" : [ ]
+  },
+  "NodeContainer" : {
+    "viewHref" : "http://saneforums.org/t5/Top/ct-p/top",
+    "description" : "",
+    "id" : "top",
+    "shortTitle" : "Top",
+    "title" : "Top",
+    "nodeType" : "Category"
+  },
+  "Page" : {
+    "skins" : [
+      "sanev2:desktop:generic:generic_web_browser:firefox:firefox_1_0:firefox_2_0",
+      "sanev2",
+      "sane",
+      "whiteui",
+      "base"
+    ],
+    "authUrls" : {
+      "loginUrl" : "http://saneforums.org/t5/user/userloginpage?dest_url=http%3A%2F%2Fsaneforums.org%2Ft5%2Fcustom%2Fpage%2Fpage-id%2FMobile-Landing-page",
+      "loginUrlNotRegistered" : "http://saneforums.org/t5/user/userloginpage?redirectreason=notregistered&dest_url=http%3A%2F%2Fsaneforums.org%2Ft5%2Fcustom%2Fpage%2Fpage-id%2FMobile-Landing-page",
+      "loginUrlNotRegisteredDestTpl" : "http://saneforums.org/t5/user/userloginpage?redirectreason=notregistered&dest_url=%7B%7BdestUrl%7D%7D"
+    },
+    "name" : "CustomPage",
+    "object" : { }
+  },
+  "TopLevelNode" : {
+    "viewHref" : "http://saneforums.org/",
+    "description" : "",
+    "id" : "gnapi98748",
+    "shortTitle" : "SANE Forums",
+    "title" : "SANE Forums",
+    "nodeType" : "Community"
+  },
+  "Community" : {
+    "viewHref" : "http://saneforums.org/",
+    "integratedprofile.lang_code" : "en",
+    "integratedprofile.country_code" : "US",
+    "id" : "gnapi98748",
+    "shortTitle" : "SANE Forums",
+    "title" : "SANE Forums"
+  },
+  "CoreNode" : {
+    "viewHref" : "http://saneforums.org/",
+    "description" : "",
+    "id" : "gnapi98748",
+    "shortTitle" : "SANE Forums",
+    "title" : "SANE Forums",
+    "nodeType" : "Community",
+    "ancestors" : [ ]
+  }
+};
+LITHIUM.Components.RENDER_URL = '/t5/util/componentrenderpage/component-id/#{component-id}?render_behavior=raw';
+LITHIUM.Css = {
+  "BASE_DEFERRED_IMAGE" : "lia-deferred-image",
+  "BASE_BUTTON" : "lia-button",
+  "BASE_SPOILER_CONTAINER" : "lia-spoiler-container",
+  "BASE_TABS_INACTIVE" : "lia-tabs-inactive",
+  "BASE_TABS_ACTIVE" : "lia-tabs-active",
+  "BASE_AJAX_REMOVE_HIGHLIGHT" : "lia-ajax-remove-highlight",
+  "BASE_FEEDBACK_SCROLL_TO" : "lia-feedback-scroll-to",
+  "BASE_FORM_FIELD_VALIDATING" : "lia-form-field-validating",
+  "BASE_FORM_ERROR_TEXT" : "lia-form-error-text",
+  "BASE_FEEDBACK_INLINE_ALERT" : "lia-panel-feedback-inline-alert",
+  "BASE_BUTTON_OVERLAY" : "lia-button-overlay",
+  "BASE_TABS_STANDARD" : "lia-tabs-standard",
+  "BASE_AJAX_SUCCESS_HIGHLIGHT" : "lia-ajax-success-highlight",
+  "BASE_CONTENT" : "lia-content",
+  "BASE_JS_HIDDEN" : "lia-js-hidden",
+  "BASE_AJAX_LOADER_CONTENT_OVERLAY" : "lia-ajax-loader-content-overlay",
+  "BASE_FORM_FIELD_SUCCESS" : "lia-form-field-success",
+  "BASE_FORM_WARNING_TEXT" : "lia-form-warning-text",
+  "BASE_FORM_FIELD_ERROR" : "lia-form-field-error",
+  "BASE_SPOILER_CONTENT" : "lia-spoiler-content",
+  "BASE_FORM_SUBMITTING" : "lia-form-submitting",
+  "BASE_EFFECT_HIGHLIGHT_START" : "lia-effect-highlight-start",
+  "BASE_FORM_FIELD_ERROR_NO_FOCUS" : "lia-form-field-error-no-focus",
+  "BASE_EFFECT_HIGHLIGHT_END" : "lia-effect-highlight-end",
+  "BASE_SPOILER_LINK" : "lia-spoiler-link",
+  "BASE_DISABLED" : "lia-link-disabled",
+  "FACEBOOK_LOGOUT" : "lia-component-users-action-logout",
+  "FACEBOOK_SWITCH_USER" : "lia-component-admin-action-switch-user",
+  "BASE_FORM_FIELD_WARNING" : "lia-form-field-warning",
+  "BASE_AJAX_LOADER_FEEDBACK" : "lia-ajax-loader-feedback",
+  "BASE_AJAX_LOADER_OVERLAY" : "lia-ajax-loader-overlay",
+  "BASE_LAZY_LOAD" : "lia-lazy-load"
+};
+LITHIUM.noConflict = true;
+LITHIUM.useCheckOnline = false;
+LITHIUM.RenderedScripts = [
+  "Globals.js",
+  "Lithium.js",
+  "jquery.ui.dialog.js",
+  "jquery.appear-1.1.1.js",
+  "InputEditForm.js",
+  "jquery.delayToggle-1.0.js",
+  "jquery.ui.mouse.js",
+  "Events.js",
+  "jquery.ajax-cache-response-1.0.js",
+  "Loader.js",
+  "Video.js",
+  "jquery.blockui.js",
+  "Forms.js",
+  "jquery.hoverIntent-r6.js",
+  "jquery.effects.core.js",
+  "DeferredImages.js",
+  "Throttle.js",
+  "jquery.ui.resizable.js",
+  "jquery.function-utils-1.0.js",
+  "Cache.js",
+  "LiModernizr.js",
+  "PolyfillsAll.js",
+  "NoConflict.js",
+  "jquery.tmpl-1.1.1.js",
+  "ElementMethods.js",
+  "jquery.fileupload.js",
+  "jquery.lithium-selector-extensions.js",
+  "jquery.iframe-shim-1.0.js",
+  "jquery.scrollTo.js",
+  "InformationBox.js",
+  "jquery.position-toggle-1.0.js",
+  "Auth.js",
+  "Text.js",
+  "SpoilerToggle.js",
+  "json2.js",
+  "jquery.css-data-1.0.js",
+  "jquery.js",
+  "Sandbox.js",
+  "ForceLithiumJQuery.js",
+  "jquery.iframe-transport.js",
+  "jquery.viewport-1.0.js",
+  "jquery.ui.position.js",
+  "AjaxFeedback.js",
+  "AC_RunActiveContent.js",
+  "jquery.effects.slide.js",
+  "Components.js",
+  "jquery.clone-position-1.0.js",
+  "AjaxSupport.js",
+  "control.js",
+  "jquery.js",
+  "Namespace.js",
+  "jquery.ui.widget.js",
+  "jquery.ui.core.js",
+  "jquery.ui.draggable.js"
+];// -->
+</script>
+</head>
+
+<body class="lia-user-status-anonymous Mobile-Landing-Page" id="lia-body">
+
+
+<ion-nav-bar>
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+</ion-nav-bar>
+
+  <div id="A30722E7" class="ServiceNodeInfoHeader">
+</div>
+  
+  
+  <div class="lia-page">
+    <div id="sane-mobile-wrapper">
+  <div id="sane-mobile-menu"><a href="#sane-offcanvas" data-uk-offcanvas=""><img src="http://gnapi98748.i.lithium.com/html/assets/sane-mobile-menu-v2.png?89F7C132CB414DF8BD91AB5C145FF1E4" alt="Mobile Menu"></a></div>
+  <div id="sane-mobile-community-title"><a href="/">SANE Forums</a></div>
+  <div id="sane-mobile-logo"><img src="http://gnapi98748.i.lithium.com/html/assets/sane-mobile-logo-v2.png?05F5A0C2017E9BB0DC96A2B78E04C062" alt="SANE Australia Logo"></div>
+</div>
+<div id="sane-offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav="">
+        <ul class="uk-nav" data-uk-nav="">
+          <li class="uk-parent"><a href="https://www.sane.org">Home</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/mental-health-and-illness">Mental Health &amp; Illness</a></li>
+          <li class="uk-parent facts-guides"><a href="https://www.sane.org/mental-health-and-illness/facts-and-guides">:: Facts &amp; Guides</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/get-help">Get Help</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/roads-to-wellness">Roads to Wellness</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/families-carers">Families &amp; Carers</a></li>
+          <li class="uk-parent forums-active"><a href="http://saneforums.org"><span>Forums</span></a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/news">News</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/get-involved">Get Involved</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/donate">Donate</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/health-professionals">Health Professionals</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/media-centre">Media Centre</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/employers">Employers</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/changing-attitudes">Changing Attitudes</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/research">Research</a></li>
+          <li class="uk-parent"><a href="https://www.sane.org/about-sane">About SANE</a></li>
+        </ul>
+      
+    </ul>
+  </div>
+</div>
+
+      <a name="lia-content"> </a>
+      <div class="lia-content">
+        
+        
+    
+      <div class="lia-quilt lia-quilt-mobile-landing-page lia-quilt-layout-mobile-page lia-top-quilt">
+  <div class="lia-quilt-row lia-quilt-row-header">
+    <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single lia-quilt-column-common-header lia-mark-empty">
+      
+    </div>
+  </div><div class="lia-quilt-row lia-quilt-row-main">
+    <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single lia-quilt-column-main-content">
+      <div class="lia-quilt-column-alley lia-quilt-column-alley-single">
+  
+    
+      <div id="sane-mobile-banner"> <img src="sanes/mobile-in-use.jpg" alt="Mobile in use"> </div>
+<div id="sane-mobile-intro">
+  <h1>SANE Forums</h1>
+    <p class="expander">The SANE Carers and Lived Experience forums offer support and social connection for people affected by mental illness, including carers, family and friends. The forums are safe, anonymous and moderated 24 hours a day.<span class="read-more"><a href="#">..Expand &gt;</a></span> <span class="details" style="display: none;"> <br><br>The forums do not provide crisis support or counselling. So if you, or someone you know, are in crisis and need urgent help call Lifeline on 13 11 14 or Emergency on 000.&#8203;<span class="read-less"> <a href="#" class="less-link"> ... &lt; Collapse</a></span></span></p>
+  <div id="sane-mobile-access">     <div id="sane-mobile-login"><a href="/t5/user/userloginpage">Login</a></div>
+    <div id="sane-mobile-register"><a href="/t5/user/userregistrationpage">Register</a></div>
+     </div>
+</div>
+<div id="sane-mobile-accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+  <h2 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Lived Experience Forum</h2>
+  <div class="sane-mobile-landing-content ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+    <ul>
+      <li class="sane-forum-welcome">
+        <div class="sane-welcome-wrap">
+          <div class="sane-video-wrap">
+            <div class="sane-video-container">
+              <iframe width="640" height="360" src="//www.youtube.com/embed/_Pa-j3LMJiM" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <p>Please note: the Lived Experience Forum does not provide crisis support or counselling services. If you or someone you know is in crisis and needs urgent help call Lifeline on 13 11 14 or Emergency on 000.</p>
+        </div>
+      </li>
+      <li class="sane-discussion-topics">Discussion Topics
+        <ul class="uk-list-line">
+          <li><a href="/t5/Our-experience-stories/bd-p/le-forum-0001">Our Experience &amp; Stories</a></li>
+          <li><a href="/t5/Looking-after-our-wellbeing/bd-p/le-forum-0002">Look after our wellbeing</a></li>
+          <li><a href="/t5/Enjoying-time-with-others/bd-p/le-forum-0003">Enjoying time with others</a></li>
+          <li><a href="/t5/Something-s-not-right/bd-p/le-forum-0004">Something’s not right</a></li>
+          <li><a href="/t5/What-s-new-services-research-and/bd-p/le-forum-0005">What’s new: services, research, and technologies</a></li>
+          <li><a href="/t5/About-the-forum-including/bd-p/le-forum-0006">About the forum, including feedback and general discussion</a></li>
+          <li><a href="/t5/Special-Events/bd-p/le-forum-0007">Special Events</a></li>
+        </ul>
+      </li>
+      <li class="sane-latest-comments le">
+        <div class="sane-latest-comments-le">
+<div class="lia-panel lia-panel-standard latest-comments Chrome lia-component-latest-comments-le">
+  <div class="lia-decoration-border">
+    <div class="lia-decoration-border-top">
+      <div></div>
+    </div>
+    <div class="lia-decoration-border-content">
+      <div>
+        <div class="lia-panel-heading-bar-wrapper">
+          <div class="lia-panel-heading-bar"> <span class="lia-panel-heading-bar-title">Latest Comments</span> </div>
+        </div>
+        <div class="lia-panel-content-wrapper">
+          <div class="lia-panel-content">             <div>
+              <div class="latest-comments-wrap">
+              <div class="latest-comments-avatar"><div>  <img src="http://gnapi98748.i.lithium.com/t5/image/serverpage/image-id/2058iF697DD1C76E0240B/image-dimensions/128x72/image-coordinates/0%2C50%2C128%2C122?v=v2"> </div></div>
+                <div class="latest-comments-subject"><div class="latest-comments-title"> <a href="http://saneforums.org/t5/Enjoying-time-with-others/Night-Shift/m-p/88801#M21994">Re: Night Shift</a> </div></div>
+              </div>
+              <div class="latest-comments-wrap">
+              <div class="latest-comments-avatar"><div>  <img src="http://gnapi98748.i.lithium.com/t5/image/serverpage/image-id/2064iFDDB01A50E886517/image-dimensions/128x72/image-coordinates/0%2C45%2C480%2C315?v=v2"> </div></div>
+                <div class="latest-comments-subject"><div class="latest-comments-title"> <a href="http://saneforums.org/t5/Enjoying-time-with-others/Night-Shift/m-p/88799#M21993">Re: Night Shift</a> </div></div>
+              </div>
+              <div class="latest-comments-wrap">
+              <div class="latest-comments-avatar"><div>  <img src="http://gnapi98748.i.lithium.com/t5/image/serverpage/image-id/2064iFDDB01A50E886517/image-dimensions/128x72/image-coordinates/0%2C45%2C480%2C315?v=v2"> </div></div>
+                <div class="latest-comments-subject"><div class="latest-comments-title"> <a href="http://saneforums.org/t5/Enjoying-time-with-others/Night-Shift/m-p/88797#M21992">Re: Night Shift</a> </div></div>
+              </div>
+              <div class="latest-comments-wrap">
+              <div class="latest-comments-avatar"><div>  <img src="http://gnapi98748.i.lithium.com/t5/image/serverpage/image-id/17i2720FF74EA801C1D/image-dimensions/128x72?v=v2"> </div></div>
+                <div class="latest-comments-subject"><div class="latest-comments-title"> <a href="http://saneforums.org/t5/Our-experience-stories/birthday-eek/m-p/88796#M14611">Re: birthday eek</a> </div></div>
+              </div>
+              <div class="latest-comments-wrap">
+              <div class="latest-comments-avatar"><div>  <img src="http://gnapi98748.i.lithium.com/t5/image/serverpage/image-id/2150iC619D5D8EE51064D/image-dimensions/128x72/image-coordinates/0%2C0%2C2048%2C1152?v=v2"> </div></div>
+                <div class="latest-comments-subject"><div class="latest-comments-title"> <a href="http://saneforums.org/t5/Enjoying-time-with-others/Night-Shift/m-p/88795#M21991">Re: Night Shift</a> </div></div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lia-decoration-border-bottom">
+      <div></div>
+    </div>
+  </div>
+</div>        </div>
+      </li>
+      <li>
+        <div class="sane-welcome-search">
+<a name="search-form"> </a>
+  
+  
+    
+  <form enctype="multipart/form-data" class="lia-form lia-form-inline lia-component-search-widget-simple-search-form" action="/t5/custom/page.simplesearchform.form.form.form" method="post" id="form_7d1a2dd6799d1d" name="form_7d1a2dd6799d1d"><div class="t-invisible"><input value="page-id/Mobile-Landing-Page" name="t:ac" type="hidden"><input value="search/contributions/elementscontributionspage" name="t:cp" type="hidden"><input value="v57ae9EF4BfDVtHs_qgp5Xpz7MPw6vlb9dBro4jvluksJEo8ybr60ghrytMNTMFHisybnc-nSOCl_igxiYsfbwO3J6UqyzXqM6-a3hxmj6HWQptpSOf77cvwICs-Pjt8sBrP6-6Z4FlAUJ4VSOMFLEXKDelmqAdW6PcFXBASYSXeD95EaMDRBwSMULKN6j3USO2ZXQK19GUaeuOmf04o5TeZIpxAhXy5Df184T1nGcgONza-Oh0t6YNJ48heu_rDjO2ryC5oscfvdxEg3_9F5ExDA_f1jliH4ujW01lb5QXShqkLLUCbXIeNPzKaeqxePFk7He1-zxjTb9ks79nsBmQSh-B2r69ilvMOZvk7ZGr1VU8mvD81OnmT0R0BCNObtyuK3UCvw43Zx4OjqpVpF8WiKljqD4WunPgn5PcELTBzgUCmeZCyfqeHq-ntmL0KqKYsrOuIzWQQujaWXJilOorm0vWfsIKsObt_3OCnEKjdOdibYj_WxM4m46rwzbxNjzYiAw6FL2T14Mj4hFR4ao3M8sl8vaVBW_HZ-psfAuRB01XuvkEQvQj2kMpkqh8GGd7tzIEMORzb9nOUyjWp32qC-ydU8TjbGEZr6P0ZuW7kqRLvOMfB1OqoHhYIvA8PvWPJMPEnRvOcgwcSCamf1SVc83ePEDVJOP2tMnk7Vxkt5O8NJpMHWOf3-TDm07FqDAf_pmlpT06Z6qCLz6hghdHS4_JKx-ooQxpZDaaby9drvGqBNQDojcwn2BjSKukPb6WIk3W5hmOl12NpjqqOFSFsTZ9XfWPsGgkd7ycWoVU." name="lia-form-context" type="hidden"><input value="Mobile-Landing-Page:page-id/Mobile-Landing-Page:simplesearchform.form.form:" name="liaFormContentKey" type="hidden"><input value="mhs+w4VPxfldiJSU8LQY4BhU4Wo=:H4sIAAAAAAAAANVVTWgTQRSeRoRK8K9gvfZQpT1kN20SkapIDalFYy0urRTBMrt5SUZnd6Yzs02K6MmDB+/eBMGb1qs3EXuQXrwoXkXwKoiKFxWcyaaYXsSFjD+Xfex7b773ve/N8B6+Rztb59BZCVgETTdgkRLEjxVhkXQrFEKIlCz3eudxA6YkCTmF5FCdidDpfChjfDkvBXKYaDiY46AJjsIcpBJrJSdgAijxtQ05iwywU9UnRic/8vr46eEHJzMItfnfZlN4OnZztvB5HVlgM7GCbqABC5g7+otZSK1aKXd+8/U4urZpQbX0bCaW3q1/qj9+ec8Sm7lUbC7ouA55CiuYESz0zF+tTIlOWcQ0htydZ69uoZHvGTRQRdngZ0ChoeoVvIpdiqOG62mSUeNYmys0iCm9yERNthaQ15feuGAchFqDGtH0dI9TlKgmiUOnBf5kb0+UOPPd5EonedQDFfNKtEoEi0zRM/szK28Kbq7Tz+AWsrmnu9rcmGxrDB32KQuuur1Qp4xHbhWWnXY1k9Iv1faxBGfa104cqBkCtJbwObSwkX174Pm3rqhGBkbncAhdHr0ipmEznZaNxgxASi/2QyKlHsPGo1qx/uXui+RyWhvg8d8fYJkCjraNMFx8cn1k9uDXf+I5Fy0uiPRsjuT3fTh6+f7tE7YWxHCfV6AFzKKFRVZMFtkltNQXTGnem+oaAwVtJU2JPQrtTrzlxGu1pKk4ZEEoGwP9M+Lv3Sb+cv7/lP8H09IPFjkLAAA=" name="t:formdata" type="hidden"></div>
+  
+  
+
+  
+
+  
+  
+  
+    <div class="lia-inline-ajax-feedback">
+      <div class="AjaxFeedback" id="feedback_7d1a2dd6799d1d"></div>
+      
+  
+
+  
+
+    </div>
+    
+  
+    
+  
+  
+  
+  
+    <div class="lia-inline-ajax-feedback">
+      <div class="AjaxFeedback" id="feedback_7d1a2dd6799d1d"></div>
+      
+  
+
+  
+
+    </div>
+    
+  
+  
+  
+  
+
+  
+  <input value="h527SkabiKY4lNyt0otupCWou23e2pAXEu9QbhFuBbI." name="lia-action-token" type="hidden">
+  
+  <input value="form_7d1a2dd6799d1d" id="form_UID" name="form_UID" type="hidden">
+  <input value="" id="form_instance_key" name="form_instance_key" type="hidden">
+  
+
+  
+    
+
+    
+      <div class="lia-quilt-row lia-quilt-row-standard lia-input-edit-form-row lia-quilt-row-first lia-quilt-row-last">
+  
+        
+          <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single lia-input-edit-form-column">
+  <div class="lia-quilt-column-alley lia-quilt-column-alley-single">
+    
+            
+              
+                
+                  
+    <div class="lia-form-row lia-form-all-words-entry">
+  
+  
+      
+    
+  
+      
+    <div class="lia-quilt-row lia-quilt-row-standard">
+  
+      
+      <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single">
+  <div class="lia-quilt-column-alley lia-quilt-column-alley-single">
+    
+        <div class="lia-form-input-wrapper">
+          
+      <input class="lia-form-all-words-input lia-form-type-text lia-form-input-vertical" id="allWords_7d1a2dd6799d1d" name="allWords" type="text" placeholder="Search the Forum">
+      
+    
+          
+          
+        </div>
+      
+  </div>
+</div>
+      
+    
+</div>
+  
+    
+
+  
+
+  
+
+  
+</div>
+  
+                
+              
+
+              
+            
+            
+          
+  </div>
+</div>
+        
+      
+</div>
+    
+  
+
+  
+
+  
+
+  
+    <div class="lia-form-footer">
+  
+      
+        
+        
+  
+    
+    <div class="lia-form-submit lia-button-group">
+  
+      
+          
+            <span class="lia-button-wrapper lia-button-wrapper-primary lia-button-wrapper-Submit-action"><input value="Submit" name="submitContextX" type="hidden"><input title="" class="lia-button lia-button-primary lia-button-Submit-action" value=">" id="submitContext_7d1a2dd6799d1d" name="submitContext" type="submit"></span>
+          
+            <span class="lia-button-wrapper lia-button-wrapper-primary lia-button-wrapper-advancedSearch-action"><input value="advancedSearch" name="submitContext_0X" type="hidden"><input title="" class="lia-button lia-button-primary lia-button-advancedSearch-action" value="Advanced Search" id="submitContext_7d1a2dd6799d1d_0" name="submitContext_0" type="submit"></span>
+          
+        
+    
+</div>
+  
+    
+  
+
+  
+
+      
+      
+
+      
+
+      
+    
+</div>
+  
+
+  
+
+
+</form>        </div>
+      </li>
+    </ul>
+  </div>
+  <h2 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Carers Forum</h2>
+  <div class="sane-mobile-landing-content ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+    <ul class="uk-nav-sub">
+      <li class="sane-forum-welcome">
+        <div class="sane-welcome-wrap">
+          <div class="sane-video-wrap">
+            <div class="sane-video-container">
+              <iframe width="640" height="360" src="//www.youtube.com/embed/FnHZCg-Zw6M" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <p>Please note: the Carers Forum does not provide crisis support or counselling services. If you or someone you know is in crisis and needs urgent help call Lifeline on 13 11 14 or Emergency on 000.</p>
+        </div>
+      </li>
+      <li class="sane-discussion-topics">Discussion Topics
+        <ul class="uk-list-line">
+          <li><a href="/t5/Our-stories/bd-p/forum-001">Our stories</a></li>
+          <li><a href="/t5/Looking-after-ourselves/bd-p/forum-002">Looking after ourselves</a></li>
+          <li><a href="/t5/Something-s-not-right/bd-p/forum-003">Something’s not right</a></li>
+          <li><a href="/t5/What-s-new-services-research/bd-p/forum-004">What's new: services, research, technologies</a></li>
+          <li><a href="/t5/About-Carers-Forum-feedback-and/bd-p/forum-005">About Carers Forum, feedback and general discussion</a></li>
+          <li><a href="/t5/Special-Events/bd-p/forum-008">Special Events</a></li>
+        </ul>
+      </li>
+      <li class="sane-latest-comments">
+        <div class="sane-latest-comments-carers">
+<div class="lia-panel lia-panel-standard latest-comments Chrome lia-component-latest-comments-le">
+  <div class="lia-decoration-border">
+    <div class="lia-decoration-border-top">
+      <div></div>
+    </div>
+    <div class="lia-decoration-border-content">
+      <div>
+        <div class="lia-panel-heading-bar-wrapper">
+          <div class="lia-panel-heading-bar"> <span class="lia-panel-heading-bar-title">Latest Comments</span> </div>
+        </div>
+        <div class="lia-panel-content-wrapper">
+          <div class="lia-panel-content">             <div> 
+              <div class="latest-comments-wrap">
+                <div class="latest-comments-avatar">
+                  <div>  <img src="http://gnapi98748.lithium.com/html/assets/AvatarLARGE.png"> </div>
+                </div>
+                <div class="latest-comments-subject">
+                  <div class="latest-comments-title"> <a href="http://saneforums.org/t5/Looking-after-ourselves/Constant-worry-over-ill-brother/m-p/88800#M2313">Re: Constant worry over ill brother</a> </div>
+                </div>
+              </div>
+              
+              <div class="latest-comments-wrap">
+                <div class="latest-comments-avatar">
+                  <div>  <img src="http://gnapi98748.lithium.com/html/assets/AvatarLARGE.png"> </div>
+                </div>
+                <div class="latest-comments-subject">
+                  <div class="latest-comments-title"> <a href="http://saneforums.org/t5/Looking-after-ourselves/Welcome-Wednesday/m-p/88792#M2312">Re: Welcome Wednesday</a> </div>
+                </div>
+              </div>
+              
+              <div class="latest-comments-wrap">
+                <div class="latest-comments-avatar">
+                  <div>  <img src="http://gnapi98748.lithium.com/html/assets/AvatarLARGE.png"> </div>
+                </div>
+                <div class="latest-comments-subject">
+                  <div class="latest-comments-title"> <a href="http://saneforums.org/t5/Looking-after-ourselves/bipolar-mother-in-law/m-p/88780#M2311">Re: bipolar mother in law</a> </div>
+                </div>
+              </div>
+              
+              <div class="latest-comments-wrap">
+                <div class="latest-comments-avatar">
+                  <div>  <img src="http://gnapi98748.lithium.com/html/assets/AvatarLARGE.png"> </div>
+                </div>
+                <div class="latest-comments-subject">
+                  <div class="latest-comments-title"> <a href="http://saneforums.org/t5/Looking-after-ourselves/bipolar-mother-in-law/m-p/88770#M2310">bipolar mother in law</a> </div>
+                </div>
+              </div>
+              
+              <div class="latest-comments-wrap">
+                <div class="latest-comments-avatar">
+                  <div>  <img src="http://gnapi98748.lithium.com/html/assets/AvatarLARGE.png"> </div>
+                </div>
+                <div class="latest-comments-subject">
+                  <div class="latest-comments-title"> <a href="http://saneforums.org/t5/Looking-after-ourselves/Welcome-Wednesday/m-p/88763#M2309">Re: Welcome Wednesday</a> </div>
+                </div>
+              </div>
+              
+ </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lia-decoration-border-bottom">
+      <div></div>
+    </div>
+  </div>
+</div>        </div>
+      </li>
+      <li class="sane-welcome-search-carers">
+        <div class="sane-welcome-search">
+<a name="search-form"> </a>
+  
+  
+    
+  <form enctype="multipart/form-data" class="lia-form lia-form-inline lia-component-search-widget-simple-search-form" action="/t5/custom/page.simplesearchform.form.form.form" method="post" id="form_7d1a2ddc024d25" name="form_7d1a2ddc024d25"><div class="t-invisible"><input value="page-id/Mobile-Landing-Page" name="t:ac" type="hidden"><input value="search/contributions/elementscontributionspage" name="t:cp" type="hidden"><input value="WbyTsFzMfZtkUR9Z3eO_RjN1dSC7rEU933RQ6kkSP3b2y7J-8QTbxiB5Smw7_CnyvTN_4CMsec5atdY_E3eB_EMDdS5uuNe7YnmBXKLj4bHzsMLDKNNrapJAeoy9UxKZwj6qAJHZwT7A9cDBITJJm11kY-aLLjpbM1FM2fxqnhb5Utlsyve9HuSKc-CsAvfo5xua-ecDNgrUSkZUKlh5TTgh3ULrsDNkvXe-o3C2aiaqJMN3TJGo4yh5KeDiOSKQrBl7a1iCt9F1KwZnD28jMly15CR7B6mT4Id_EM3rsyACq49kT7VMHxpBPz0KEGblKTiQqFfwyMjPKa81RsfEJdCo7Nb6pOcbWEkOdY6uNbLzWcny6gUbN816UArIz2inSCYaGlxLFKDd253hFG6HVDX9X2Pll78pSKAThaYsH0w9WRGhMSr7H6hpeZEmh6mTBlOgCTfTy6Cakn_AdLyxBWOh6wA_wyi9CWXeDvp_u3Y_3hB0EKzTnzpBncfZJK2fnHCWvSP3u54nYyIplFKsRvtVlPmz78tcs0ZXWCjU4iHAOW65b6CaYWGgf4u_wV6N1Y8QzbA01JJjHORohVJW6HOBIzY5HjuLQMBm3--ocnIr_F6Un15M1poX7nRfVUP2Z8Rz4BRjyQG6uxH-MJk6JDeMUdY6zEPd2IXlPbRc5MYyLmKTn3Um3GiPBy2M3SsttRVUT_peDQ1QK_ZpgsHbVpFlOFON1UCWwHFTlX2k1qmJ98tp4IeqX-3Ct7QvnREko_UhBArEl0_n47Uin4ZYz7hH0-fM9hszK0-iS1mwtaI." name="lia-form-context" type="hidden"><input value="Mobile-Landing-Page:page-id/Mobile-Landing-Page:simplesearchform.form.form:" name="liaFormContentKey" type="hidden"><input value="mhs+w4VPxfldiJSU8LQY4BhU4Wo=:H4sIAAAAAAAAANVVTWgTQRSeRoRK8K9gvfZQpT1kN20SkapIDalFYy0urRTBMrt5SUZnd6Yzs02K6MmDB+/eBMGb1qs3EXuQXrwoXkXwKoiKFxWcyaaYXsSFjD+Xfex7b773ve/N8B6+Rztb59BZCVgETTdgkRLEjxVhkXQrFEKIlCz3eudxA6YkCTmF5FCdidDpfChjfDkvBXKYaDiY46AJjsIcpBJrJSdgAijxtQ05iwywU9UnRic/8vr46eEHJzMItfnfZlN4OnZztvB5HVlgM7GCbqABC5g7+otZSK1aKXd+8/U4urZpQbX0bCaW3q1/qj9+ec8Sm7lUbC7ouA55CiuYESz0zF+tTIlOWcQ0htydZ69uoZHvGTRQRdngZ0ChoeoVvIpdiqOG62mSUeNYmys0iCm9yERNthaQ15feuGAchFqDGtH0dI9TlKgmiUOnBf5kb0+UOPPd5EonedQDFfNKtEoEi0zRM/szK28Kbq7Tz+AWsrmnu9rcmGxrDB32KQuuur1Qp4xHbhWWnXY1k9Iv1faxBGfa104cqBkCtJbwObSwkX174Pm3rqhGBkbncAhdHr0ipmEznZaNxgxASi/2QyKlHsPGo1qx/uXui+RyWhvg8d8fYJkCjraNMFx8cn1k9uDXf+I5Fy0uiPRsjuT3fTh6+f7tE7YWxHCfV6AFzKKFRVZMFtkltNQXTGnem+oaAwVtJU2JPQrtTrzlxGu1pKk4ZEEoGwP9M+Lv3Sb+cv7/lP8H09IPFjkLAAA=" name="t:formdata" type="hidden"></div>
+  
+  
+
+  
+
+  
+  
+  
+    <div class="lia-inline-ajax-feedback">
+      <div class="AjaxFeedback" id="feedback_7d1a2ddc024d25"></div>
+      
+  
+
+  
+
+    </div>
+    
+  
+    
+  
+  
+  
+  
+    <div class="lia-inline-ajax-feedback">
+      <div class="AjaxFeedback" id="feedback_7d1a2ddc024d25"></div>
+      
+  
+
+  
+
+    </div>
+    
+  
+  
+  
+  
+
+  
+  <input value="MKeQhAw_9NtnNG-sxpRuw-4kXbeqPhokFU7o2E_-iJE." name="lia-action-token" type="hidden">
+  
+  <input value="form_7d1a2ddc024d25" id="form_UID" name="form_UID" type="hidden">
+  <input value="" id="form_instance_key" name="form_instance_key" type="hidden">
+  
+
+  
+    
+
+    
+      <div class="lia-quilt-row lia-quilt-row-standard lia-input-edit-form-row lia-quilt-row-first lia-quilt-row-last">
+  
+        
+          <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single lia-input-edit-form-column">
+  <div class="lia-quilt-column-alley lia-quilt-column-alley-single">
+    
+            
+              
+                
+                  
+    <div class="lia-form-row lia-form-all-words-entry">
+  
+  
+      
+    
+  
+      
+    <div class="lia-quilt-row lia-quilt-row-standard">
+  
+      
+      <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single">
+  <div class="lia-quilt-column-alley lia-quilt-column-alley-single">
+    
+        <div class="lia-form-input-wrapper">
+          
+      <input class="lia-form-all-words-input lia-form-type-text lia-form-input-vertical" id="allWords_7d1a2ddc024d25" name="allWords" type="text" placeholder="Search the Forum">
+      
+    
+          
+          
+        </div>
+      
+  </div>
+</div>
+      
+    
+</div>
+  
+    
+
+  
+
+  
+
+  
+</div>
+  
+                
+              
+
+              
+            
+            
+          
+  </div>
+</div>
+        
+      
+</div>
+    
+  
+
+  
+
+  
+
+  
+    <div class="lia-form-footer">
+  
+      
+        
+        
+  
+    
+    <div class="lia-form-submit lia-button-group">
+  
+      
+          
+            <span class="lia-button-wrapper lia-button-wrapper-primary lia-button-wrapper-Submit-action"><input value="Submit" name="submitContextX" type="hidden"><input title="" class="lia-button lia-button-primary lia-button-Submit-action" value=">" id="submitContext_7d1a2ddc024d25" name="submitContext" type="submit"></span>
+          
+            <span class="lia-button-wrapper lia-button-wrapper-primary lia-button-wrapper-advancedSearch-action"><input value="advancedSearch" name="submitContext_0X" type="hidden"><input title="" class="lia-button lia-button-primary lia-button-advancedSearch-action" value="Advanced Search" id="submitContext_7d1a2ddc024d25_0" name="submitContext_0" type="submit"></span>
+          
+        
+    
+</div>
+  
+    
+  
+
+  
+
+      
+      
+
+      
+
+      
+    
+</div>
+  
+
+  
+
+
+</form>        </div>
+    </li></ul>
+  </div>
+</div>
+
+    
+  
+  
+</div>
+    </div>
+  </div><div class="lia-quilt-row lia-quilt-row-footer">
+    <div class="lia-quilt-column lia-quilt-column-24 lia-quilt-column-single lia-quilt-column-common-footer">
+      <div class="lia-quilt-column-alley lia-quilt-column-alley-single">
+  
+    
+      <div class="lia-panel lia-panel-standard StringDisplayTaplet Chrome lia-component-common-widget-announcement"><div class="lia-decoration-border"><div class="lia-decoration-border-top"><div> </div></div><div class="lia-decoration-border-content"><div><div class="lia-panel-heading-bar-wrapper"><div class="lia-panel-heading-bar"><span class="lia-panel-heading-bar-title">Upcoming events &amp; featured discussions</span></div></div><div class="lia-panel-content-wrapper"><div class="lia-panel-content"><div class="StringDisplayTaplet">
+  
+      <div class="promo-row">
+  <div class="promo-image"><a href="/t5/Special-Events/Topic-Tuesday-What-use-is-a-diagnosis-19-July-7pm-AEST/td-p/84217"><img src="sanes/topic-tuesday-le.png" alt="Topic Tuesday"></a></div>
+    <div class="promo-content">
+      <div class="promo-title"><a href="/t5/Special-Events/Topic-Tuesday-What-use-is-a-diagnosis-19-July-7pm-AEST/td-p/84217">Topic Tuesday</a></div>
+        <div class="promo-category">Lived Experience</div>
+        <div class="promo-text">What use is diagnosis?</div>
+    </div>
+    <div class="promo-date">
+      <div class="promo-day">Tue 19</div>
+        <div class="promo-month">Jul</div>
+        <div class="promo-time">7pm</div>
+        <div class="promo-zone">AEST</div>
+    </div>
+</div>
+<div class="promo-row">
+  <div class="promo-image"><a href="/t5/Looking-after-ourselves/No-time-for-self-care-Here-s-a-5-step-guide-for-busy-people/m-p/16803"><img src="sanes/train-busy.jpg" alt="Passenger on platform"></a></div>
+    <div class="promo-content">
+      <div class="promo-title"><a href="/t5/Looking-after-ourselves/No-time-for-self-care-Here-s-a-5-step-guide-for-busy-people/m-p/16803">No time for self care?</a></div>
+        <div class="promo-category">Carers</div>
+        <div class="promo-text">Here’s a 5-step guide for busy people.</div>
+    </div>
+    <div class="promo-date">
+      <div class="promo-day"></div>
+        <div class="promo-month"></div>
+        <div class="promo-time"></div>
+        <div class="promo-zone"></div>
+    </div>
+</div>
+        
+    
+</div></div></div></div></div><div class="lia-decoration-border-bottom"><div> </div></div></div></div>
+    
+  
+  
+</div>
+    </div>
+  </div>
+</div>
+        
+  
+      <div class="lia-ajax-loader-feedback" style="display: none;"><div></div></div></div>
+    <div id="sane-mobile-footer">
+  <ul class="uk-subnav uk-subnav-line">
+      <li><a href="/t5/custom/page/page-id/sane-forums-terms-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/t5/custom/page/page-id/sane-forums-privacy-policy">Privacy</a></li>
+        <li><a href="https://www.sane.org/forum-your-feedback">Feedback</a></li>
+        <li><a href="https://www.sane.org/sane-forums-partners">Forum Partners</a></li>
+    </ul>        
+</div>
+  </div>
+  
+  
+  
+<script type="text/javascript" src="http://gnapi98748.i.lithium.com/t5/scripts/DEC8E3F5F08150661646725B31519F24/lia-scripts-common-min.js"></script><script type="text/javascript" src="http://gnapi98748.i.lithium.com/t5/scripts/84722965DBCEAA7B16D99B76B7BCB70B/lia-scripts-body-min.js"></script><script language="javascript" type="text/javascript">
+<!--
+LITHIUM.Sandbox.restore();
+LITHIUM.jQuery.fn.cssData.defaults = {"dataPrefix":"lia-js-data","pairDelimeter":"-","prefixDelimeter":"-"};
+  jQuery("#lia-body .lia-content .lia-quilt .lia-component-search-widget-simple-search-form .lia-form-type-text").attr("placeholder","Search the Forum"); 
+
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2dd1455f46","feedbackSelector":".InfoMessage"});
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2dd6799d1d","feedbackSelector":".InfoMessage"});
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2dd6799d1d_0","feedbackSelector":".InfoMessage"});
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2dd6799d1d_1","feedbackSelector":".InfoMessage"});
+LITHIUM.AjaxFeedback(".lia-inline-ajax-feedback", "LITHIUM:hideAjaxFeedback", ".lia-inline-ajax-feedback-persist");
+LITHIUM.Form.resetFieldForFocusFound();
+LITHIUM.InputEditForm("form_7d1a2dd6799d1d", {"enableFormButtonEvent":"LITHIUM:enableFormButton","warnUnsavedDataActionCssClasses":["lia-form-action-ignore-unsaved-data"],"useUnsavedDataWarning":false,"ignoreDisableFormDuringSubmitCssClasses":[],"submitOnChange":false,"swallowEnterEvent":false,"enableFormEvent":"LITHIUM:enableForm","disableFormButtonEvent":"LITHIUM:disableFormButton","disableFormEvent":"LITHIUM:disableForm","unloadMessage":"Unsaved information will be lost.","ignoreOnChangeCssClasses":[],"disableFormOnSubmit":true,"buttonWrapperSelector":".lia-button-wrapper","showUnsavedDataWarningDataKey":"showUnsavedDataWarning","liaBodyTagId":"#lia-body"});
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2ddc024d25","feedbackSelector":".InfoMessage"});
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2ddc024d25_0","feedbackSelector":".InfoMessage"});
+LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_7d1a2ddc024d25_1","feedbackSelector":".InfoMessage"});
+LITHIUM.InputEditForm("form_7d1a2ddc024d25", {"enableFormButtonEvent":"LITHIUM:enableFormButton","warnUnsavedDataActionCssClasses":["lia-form-action-ignore-unsaved-data"],"useUnsavedDataWarning":false,"ignoreDisableFormDuringSubmitCssClasses":[],"submitOnChange":false,"swallowEnterEvent":false,"enableFormEvent":"LITHIUM:enableForm","disableFormButtonEvent":"LITHIUM:disableFormButton","disableFormEvent":"LITHIUM:disableForm","unloadMessage":"Unsaved information will be lost.","ignoreOnChangeCssClasses":[],"disableFormOnSubmit":true,"buttonWrapperSelector":".lia-button-wrapper","showUnsavedDataWarningDataKey":"showUnsavedDataWarning","liaBodyTagId":"#lia-body"});
+  jQuery( "#sane-mobile-accordion" ).accordion({
+    collapsible: true,
+    active: false,
+    autoHeight: false,
+    heightStyle: "content",
+    header: "h2",
+    activate: function(event, ui){
+        
+          if(ui.newHeader.length>0) {
+        var scrollTop = jQuery("#sane-mobile-accordion").scrollTop();
+        var top = jQuery(ui.newHeader).offset().top;                
+                    jQuery("html,body").animate({ scrollTop: scrollTop + top -0 }, 400);
+      } else {
+        var scrollTop = jQuery("#sane-mobile-accordion").scrollTop();
+        var top = $(ui.oldHeader).offset().top;
+          jQuery("html,body").animate({ scrollTop: scrollTop + top -0 }, 400);
+      }
+    }
+  });
+    
+    jQuery('p.expander').expander({
+      userCollapseText: ' ... < Collapse',
+        expandEffect: 'fadeIn',
+        collapseEffect: 'fadeOut'
+    }); 
+
+new Image().src = ["/","b","e","a","c","o","n","/","3","7","8","1","4","6","9","5","2","6","_","1","4","6","9","0","1","2","3","3","5","9","4","3",".","g","i","f"].join("");
+LITHIUM.Auth.API_URL = '/t5/util/authcheckpage';
+LITHIUM.Auth.LOGIN_URL_TMPL = 'http://saneforums.org/t5/user/userloginpage?dest_url=#{destUrl}';
+LITHIUM.Auth.KEEP_ALIVE_URL = '/t5/status/blankpage?keepalive';
+LITHIUM.Auth.KEEP_ALIVE_TIME = 180000;
+LITHIUM.Auth.CHECK_SESSION_TOKEN = 'mcSCteVVJGjZgms1hTl0BwfV84boZFd1GI36QZ_vcCQ.';
+LITHIUM.AjaxSupport.useTickets = false;
+// -->
+</script>
+</body>
+  
+</html>
